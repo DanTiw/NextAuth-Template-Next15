@@ -3,7 +3,9 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+
 export default function Home() {
+
     const { data: session } = useSession();
     const [isSignedIn, setIsSignedIn] = useState(false);
     useEffect(() => {

@@ -8,6 +8,7 @@ export default function ExamplePage() {
   const handleProtectedAction = () => {
     // This is the protected action
     console.log("Performing protected action");
+    alert("Performing protected action");
   };
 
   return (
